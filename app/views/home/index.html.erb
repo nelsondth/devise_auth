@@ -1,0 +1,5 @@
+<h1>Hola vale bienvenido</h1>
+<% if current_user%>
+  Haz entrado como: <%= current_user.email%>
+  <%= link_to 'Cerrar sesion',  destroy_user_session_path, method: 'delete' %>
+<% end%>
